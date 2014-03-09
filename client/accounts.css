@@ -1,0 +1,92 @@
+/* CSS declarations go here */
+body{background-color:white; }
+
+#theTop {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 70px;
+   width: 100%;
+   background: #0066FF;
+   /*border-bottom: 1px solid #000;*/
+   z-index:99999;
+   /*border: 1px solid #000000;*/
+   
+   background-image: -moz-linear-gradient(top, #0066FF, #3366FF);
+   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0066FF), to(#3366FF));
+   background-image: -webkit-linear-gradient(top, #0066FF, #3366FF);
+   background-image: -o-linear-gradient(top, #0066FF, #3366FF);
+   background-image: linear-gradient(to bottom, #0066FF, #3366FF);
+   background-repeat: repeat-x;
+   border-color: #252525;
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0066FF', endColorstr='#ff3366FF', GradientType=0);
+
+}
+/*
+#theTop a{  	
+	color: white;  
+	text-decoration: none;
+	left:400px;
+}
+*/
+
+ #theTopsignIN {
+   position: absolute;
+   top: 77px;
+   right: 0px;
+   height: 10px;
+   width: 20%;
+   padding: 7px 14px 2px;  
+
+ }
+
+
+  
+
+
+
+#loginBox{
+	/*border: dashed;
+	border-color: #001111;
+	*/
+	position:absolute;
+	width:30%;
+	height:48.5%;
+	left : 35%;
+	bottom: 25%;
+			
+									
+/*background-image: linear-gradient(left , #40A9CF 29%, #AEC2D4 70%);
+background-image: -o-linear-gradient(left , #40A9CF 29%, #AEC2D4 70%);
+background-image: -moz-linear-gradient(left , #40A9CF 29%, #AEC2D4 70%);
+background-image: -webkit-linear-gradient(left , #40A9CF 29%, #AEC2D4 70%);
+background-image: -ms-linear-gradient(left , #40A9CF 29%, #AEC2D4 70%);
+*/
+/*
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	right bottom,
+	color-stop(0.29, #40A9CF),
+	color-stop(0.7, #AEC2D4)
+);*/
+		
+	}
+	
+
+#loginBox2 {
+	
+	position:absolute;
+	width:40.45%;
+	height:25%;
+	left : 29.77%;
+	bottom: 37.5%;		
+	
+	}
+	
+#signIn{
+position: absolute;
+left: 10%;
+width: 80%;
+
+}
