@@ -2,47 +2,10 @@
   <title>IT-Connections</title>
 </head>
 
+
 <body>
-
-	<header>
-  
-  <!-- NAVBAR -->
-  <div class="navbar navbar-inverse navbar-fixed-top">  
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="brand" href="#"><span style='color: white;'>IT-Connections</span></a>
-        <div class="nav-collapse collapse">
-          <ul class="nav pull-right">
-
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div><!--/.container --> 
-    </div><!--/.navbar-inner -->
-  </div><!--/.navbar -->
-
-  </header>
-
-
-  {{> loginBox}} 
-  
+ {{renderPage}}
 </body>
 
 
-<template name='loginBox'>
-    
-  <div id="loginBox">
-    <div id="loginBox2">
-      <form class="navbar-form pull-right" action="main.html">
-          <input class="span2" type="text" placeholder="User" autofocus='autofocus'>
-          <input class="span2" type="password" placeholder="Password" autofocus='autofocus'>
-          <button id="signIn" type="submit" class="btn">Sign in</button>
-      </form>
-    </div>
-  </div>
-                        
-</template>
+

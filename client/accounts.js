@@ -8,3 +8,11 @@ Meteor.loginAsAdmin = function(password, callback) {
     userCallback: callback
   });
 };
+
+
+
+Meteor.Router.add({
+  '/': 'login',
+  '/main': 'main',
+  '*': 'not_found'
+});

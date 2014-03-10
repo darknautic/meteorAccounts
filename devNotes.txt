@@ -1,0 +1,13 @@
+
+Install  Meteor, nodejs, npm
+---------------------------------------------------
+         $ curl https://install.meteor.com/ | sh
+fedora : $ sudo yum install nodejs npm
+fedora : $ sudo -H npm install -g meteorite
+ 
+
+
+
+$ meteor add jquery
+$ meteor add bootstrap
+$ mrt add router
