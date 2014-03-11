@@ -1,13 +1,53 @@
 
 Install  Meteor, nodejs, npm
 ---------------------------------------------------
-         $ curl https://install.meteor.com/ | sh
-fedora : $ sudo yum install nodejs npm
-fedora : $ sudo -H npm install -g meteorite
+
+fedora : $ curl https://install.meteor.com/ | sh
+         $ sudo yum install nodejs npm
+         $ sudo -H npm install -g meteorite
  
 
 
 
 $ meteor add jquery
 $ meteor add bootstrap
+$ mrt add router
+
+$ meteor remove autopublish
+$ meteor remove insecure
+
+
+
+
+
+
+
+
+
+
+
+
+proxy issues
+-------------------
+npm config get proxy
+npm config get https-proxy
+
+npm config set proxy http://proxy.ibopeagb.com.mx:3128/
+npm config set https-proxy http://proxy.ibopeagb.com.mx:3128/
+
+
+sudo -H npm --https-proxy=https://proxy.ibopeagb.com.mx:3128 install -g meteorite
+
+npm config set registry http://registry.npmjs.org/
+sudo -H npm config set registry http://registry.npmjs.org/
+
+
+
+mrt issues
+-----------------------------
+$ mrt add router
+         /usr/bin/env: node: No such file or directory
+$ which nodejs
+         /usr/bin/nodejs
+$ sudo ln -s /usr/bin/nodejs /usr/bin/node
 $ mrt add router
