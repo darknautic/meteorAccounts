@@ -8,7 +8,7 @@ fedora : $ curl https://install.meteor.com/ | sh
  
 
 
-
+$ meteor list --using
 $ meteor add jquery
 $ meteor add bootstrap
 $ mrt add router
