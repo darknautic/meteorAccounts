@@ -8,6 +8,7 @@ fedora : $ curl https://install.meteor.com/ | sh
  
 
 
+$ meteor list --using
 
 $ meteor add jquery
 $ meteor add bootstrap
@@ -18,6 +19,7 @@ $ meteor remove insecure
 
 
 
+console.log(Meteor.default_connection._lastSessionId)
 
 
 
@@ -43,6 +45,8 @@ sudo -H npm config set registry http://registry.npmjs.org/
 
 
 
+
+
 mrt issues
 -----------------------------
 $ mrt add router
@@ -51,3 +55,42 @@ $ which nodejs
          /usr/bin/nodejs
 $ sudo ln -s /usr/bin/nodejs /usr/bin/node
 $ mrt add router
+
+
+
+
+
+git notes
+------------------------------
+git config color.ui true
+git config format.pretty oneline
+
+
+
+
+
+
+mongodb notes
+---------------------
+ db.users.find({},{"emails":1 });
+ db.users.find({},{"_id" : 0 , "emails":1 });
+ 
+ db.users.find({},{_id:1})
+ db.users.find({'emails.address':"w@w"})
+ db.users.find({'emails.address':"w@w"},{_id:1})
+ { emails: { $elemMatch: { address: "foo@foo.com" } } }
+ 
+
+ db.users.find({'emails.address':"w@w"},{"_id":0,"services":1}); 
+
+~ db.users.find({ },{_id: "eCiZe2EBkJ2NGNxqx",'services.resume.loginTokens.hashedToken': 1})
+~ db.users.find({ },{_id: "eCiZe2EBkJ2NGNxqx",'services.resume.loginTokens.hashedToken':1}).sort({when:-1});
+
+
+
+
+www notes
+----------------------------------
+http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor
+
+
