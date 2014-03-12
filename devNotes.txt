@@ -15,6 +15,7 @@ $ meteor list --using
 $ meteor add jquery
 $ meteor add bootstrap
 $ mrt add router
+$ meteor add force-ssl
 
 $ meteor remove autopublish
 $ meteor remove insecure
@@ -67,6 +68,10 @@ git notes
 git config color.ui true
 git config format.pretty oneline
 
+git remote update, git show-branch *master, git status -uno
+git pull
+
+git push -u origin master
 
 
 
