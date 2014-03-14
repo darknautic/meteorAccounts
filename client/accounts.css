@@ -1,5 +1,8 @@
 /* CSS declarations go here */
-body{background-color:white; }
+body{
+   background-color:white;
+   font-family: "PT Sans","Helvetica Neue",Helvetica,Arial,sans-serif; 
+   }
 
 
 #theTop {
