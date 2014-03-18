@@ -1,4 +1,4 @@
-Accounts.registerLoginHandler(function(loginRequest) {
+/*Accounts.registerLoginHandler(function(loginRequest) {
   //there are multiple login handlers in meteor. 
   //a login request go through all these handlers to find it's login hander
   //so in our login handler, we only consider login requests which has admin field
@@ -26,3 +26,4 @@ Accounts.registerLoginHandler(function(loginRequest) {
   }
 });
 
+*/

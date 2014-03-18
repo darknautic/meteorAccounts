@@ -50,9 +50,7 @@ body{
   
 #loginBox{
    
-   /*border: dashed;
-   border-color: #001111;*/
-   
+   /*border: 2px dashed black;   */
    position:absolute;
    width:50%;
    height:48.5%;
@@ -82,27 +80,35 @@ body{
 	
    position:absolute;
    width: 40%;
-   height:50%;
+   height:65%;
    left : 30%;
-   bottom: 25%;
+   bottom: 15%;
    /*border: 2px dashed black;*/
    }
    
 #auxLinks {
-   /*border: 1px dashed black;*/
    position: absolute;
    top : 75%;
    left : 10%;
    width: 80%;
    height: 20%;
-   
+   text-align: center;
+   cursor: pointer;
+   /*border: 2px dashed black;*/
    }
 	
         
-#signIn{
-   
+#signIn{   
    position: relative;
    top : 5px;
    left: 5%;   
    width: 90%;
    }
+   
+#signUp{   
+   position: relative;
+   top : 5px;
+   left: 5%;   
+   width: 90%;
+   }
+   

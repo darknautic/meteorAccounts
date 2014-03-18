@@ -1,4 +1,4 @@
-<template name="login">
+<template name="signUp">
 
   <header>
     <!-- NAVBAR -->
@@ -14,7 +14,7 @@
             <div class="nav-collapse collapse">
               <ul class="nav pull-right">
                  
-
+              
               </ul>
             </div><!--/.nav-collapse -->
           </div><!--/.container --> 
@@ -22,19 +22,20 @@
       </div><!--/.navbar -->
   </header>
 
+  <div class="container"><br><br><br><b> </b></div>
   
   <div id="loginBox">
     <div id="loginBox2">
-      <form id="loginForm"class="navbar-form pull-right" action="/main">      
+      <form id="signUpForm"class="navbar-form pull-right" action="/">
+        <b>Thanks for joining us.</b><br>
           <input id="emailBox" class="span3" type="text" placeholder="Email" autofocus='autofocus'>
-          <input id="passwdBox"  class="span3" type="password" placeholder="Password" >          
-          <input id="signIn" type="submit" class="btn btn-info" value="Sign In"></button>          
-      </form>
-      <div id="auxLinks"><a id="createAccount" href="signUp">Create Account</a></div>
+          <input id="passwdBox"  class="span3" type="password" placeholder="Password" >
+          <input id="passwd2Box"  class="span3" type="password" placeholder="Confirm Password" >  
+          <button id="signUp" type="submit" class="btn btn-info">Sign Up</button>
+          
+      </form>      
     </div>
   </div>
-  
-
-  
+   
   
 </template>

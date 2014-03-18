@@ -1,7 +1,6 @@
 <template name="main">
 
-
-    	
+  	
   <header>
     
   <!-- NAVBAR -->
@@ -31,8 +30,8 @@
                 <li><a href='#'>Open a Change</a></li>          
               </ul>
             </li>
-            <li><a href="/">Sign out</a></li>
-            <li><a href="#">{{loginButtons}}</a></li>
+            <li>{{> whois}}</li>
+            <!--<li><a href="#">{{loginButtons}}</a></li>-->
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
           </ul>
@@ -44,4 +43,17 @@
   </header>
 
 
+
+
+</template>
+
+<template name="whois">
+  <ul class="nav nav-pills">
+    <li class="dropdown">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{loggedUser}}<b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a id="whois" href="#">Sign out</a></li>        
+      </ul>
+    </li>
+  </ul>
 </template>
