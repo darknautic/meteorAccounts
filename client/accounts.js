@@ -42,8 +42,8 @@ Template.login.events({
              
       else {
 
-        console.log("Info : mail " + Meteor.user().emails[0].address);
-        console.log("Info : id " + Meteor.userId());
+        //console.log("Info : mail " + Meteor.user().emails[0].address);
+        //console.log("Info : id " + Meteor.userId());
         
         // Hash Value
         /*var current_date = (new Date()).valueOf().toString();
@@ -52,14 +52,15 @@ Template.login.events({
           */
                           
        
-        alert("Continue ?");
-        //window.location.href = "/main";
+        //alert("Continue ?");
+        //window.location = "/main";
         //Session.set('SessionID',Meteor.userId());
         Session.set('loggedUser',Meteor.user().emails[0].address);
-        alert(Session.get('loggedUser'));
-        //window.location.href = "/main";
         //alert(Session.get('loggedUser'));
-        console.log("Info : Successfully logged");                  
+        //window.location.href = "/main";
+        alert(Session.get('loggedUser'));
+        Meteor.Router.page("main");
+        //console.log("Info : Successfully logged");                  
 
       }
       
@@ -71,6 +72,17 @@ Template.login.events({
    
 });  //login events end
 
+
+
+/*
+$(document).ready(function() {
+      alert("document ready occurred!");
+});
+
+$(window).load(function() {
+      alert("window load occurred!");
+});
+*/
 
 Template.signUp.events({
   'submit #signUpForm': function (e, t){
@@ -142,7 +154,7 @@ Template.whois.events({
 Template.whois.loggedUser = function(){
   var whois = Session.get('loggedUser');
   //if(!whois){whois = "Sign out";}
-  alert(whois);
+  //alert(whois);
   return whois;
   };
   

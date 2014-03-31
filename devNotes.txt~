@@ -135,24 +135,6 @@ db.employees.find({name : "cesar"}).pretty();
 db.employees.find({'family.mother' :  "ella"}).pretty()
 
 
--------"update add " -------------------------
-Update has the sometimes unexpected behavior of replacing the entire document.  
-However, we can use update operators to only modify parts of our documents.
-Update Sue languages without overwriting them:
-
-  db.users.update({name: 'Sue'}, { $addToSet: {languages: ['ruby']}});
-  
-Or we can add a new field to Cash
-  
-  db.users.update({name: 'Cash'}, {'$set': {'age': 50} });
-  
-You can also push and pull items from arrays:
-
-  db.users.update({name: 'Sue'}, {'$push': {'languages': 'ruby'} });
-  db.users.update({name: 'Sue'}, {'$pull': {'languages': 'scala'} });
-
-
-
 
  ----"utilities"------
 http://localhost:28017/
